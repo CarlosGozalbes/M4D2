@@ -37,8 +37,8 @@ class LatestRelease extends Component {
  */
     render() {
         return (
-            <Container>
-                <Row className="justify-content-center">
+            <Container className="justify-content-center py-5 bg-light">
+                <Row>
                     {
                                                     
                         scifi.map(book => (
