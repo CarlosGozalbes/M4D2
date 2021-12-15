@@ -1,9 +1,10 @@
 
 import './App.css';
-import ' bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav.jsx'
-import Welcome from './components/Welcome';
-
+import Welcome from './components/Welcome.jsx'
+import LatestRelease from './components/LatestRelease.jsx'
+import MyFooter from './components/MyFooter.jsx'
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <MyNav/>
       <Welcome/>
-      <Latest-Release/>
+      <LatestRelease/>
       <MyFooter/>
     </div>
   );

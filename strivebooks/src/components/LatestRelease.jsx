@@ -1,6 +1,8 @@
-import { Component } from 'react'
-import { Container, Row, Col, Card, } from 'react-bootstrap'
+import { Component}  from 'react'
+import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import scifi from '../data/scifi.json'
+import SingleBook from './SingleBook'
+ 
 // dishes is the array with 5 objects inside of it (each one being a pasta dish)
 
 // .map() is an array method that modifies the objects and returns to you a new array
@@ -24,7 +26,7 @@ import scifi from '../data/scifi.json'
 // 3) the only mandatory method in a class is called render()
 // 4) put your JSX in the return statement of the render method
 
-class Home extends Component {
+class LatestRelease extends Component {
 
    
     /* state = {
@@ -40,18 +42,7 @@ class Home extends Component {
                     {
                                                     
                         scifi.map(book => (
-                        <Col xs={12} md={6} lg={3}>
-                        <Card className="bg-dark text-white" style={{ width: '18rem' }}>>
-                            <Card.Img src={book.img} alt="book image" />
-                                <Card.ImgOverlay>
-                                    <Card.Title>{book.Title}</Card.Title>
-                                    <Card.Text>
-                                        {book.category}
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                            </Card.ImgOverlay>
-                        </Card>
-                        </Col>
+                         <SingleBook book={book}/>
                         ))
                         }
                     
@@ -62,6 +53,6 @@ class Home extends Component {
     }
 }
 
-export default Latest-Release
+export default LatestRelease
 
 
