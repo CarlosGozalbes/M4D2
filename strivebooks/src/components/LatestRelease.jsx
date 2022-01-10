@@ -1,5 +1,5 @@
 import { Component}  from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import scifi from '../data/scifi.json'
 import SingleBook from './SingleBook'
  
